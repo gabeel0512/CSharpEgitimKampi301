@@ -6,4 +6,4 @@
 
 ### Proje Hakkında :
 Bu projemizde Entity Framework kullanarak veri görüntüleme işlemi yaptık. Veri tabanı olarak MSSQL kullandık. 3 adet tablomuz vardır ve bunlar ; Rehberler(Guide), Gezi lokasyonları(Location) ve Müşteriler(Customer) tablosudur.
-Bu projeden öğrendiklerimiz: CRUD işlemleri, Entity Framework kullanımı, N katmanlı mimari, Linq sorgular.
+Bu projeden öğrendiklerimiz: CRUD işlemleri, Entity Framework kullanımı, N katmanlı mimari, Linq sorgular, Database First yaklaşımı
