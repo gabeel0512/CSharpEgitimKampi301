@@ -19,7 +19,7 @@ namespace CSharpEgitimKampi301.EfProject
         EgitimKampiEfTravelDbEntities db = new EgitimKampiEfTravelDbEntities();
         private void FrmStatistic_Load(object sender, EventArgs e)
         {
-
+            
             lblLocation.Text = db.LocationTbl.Count().ToString();
 
             lblCapasity.Text = db.LocationTbl.Sum(x => x.LocationCapacity).ToString();
