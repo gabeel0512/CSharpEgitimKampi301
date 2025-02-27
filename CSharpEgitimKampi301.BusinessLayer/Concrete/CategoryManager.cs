@@ -9,7 +9,7 @@ using CSharpEgitimKampi301.EntityLayer.Concrete;
 
 namespace CSharpEgitimKampi301.BusinessLayer.Concrete
 {
-    public class CategoryManager: ICategoryService
+    public class CategoryManager : ICategoryService
     {
         private readonly ICategoryDal _categoryDal;
 

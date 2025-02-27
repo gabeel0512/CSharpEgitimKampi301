@@ -9,7 +9,7 @@ using CSharpEgitimKampi301.EntityLayer.Concrete;
 
 namespace CSharpEgitimKampi301.DataAccessLayer.EntityFramework
 {
-    internal class EfOrderDal : GenericRepository<Order>, IOrderDal
+    public class EfOrderDal : GenericRepository<Order>, IOrderDal
     {
 
     }

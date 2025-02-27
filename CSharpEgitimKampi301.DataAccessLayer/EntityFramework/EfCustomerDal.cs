@@ -9,7 +9,7 @@ using CSharpEgitimKampi301.EntityLayer.Concrete;
 
 namespace CSharpEgitimKampi301.DataAccessLayer.EntityFramework
 {
-    internal class EfCustomerDal : GenericRepository<Customer>, ICustomerDal
+    public class EfCustomerDal : GenericRepository<Customer>, ICustomerDal
     {
     }
 }

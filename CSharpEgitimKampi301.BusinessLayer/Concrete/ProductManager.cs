@@ -4,33 +4,52 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CSharpEgitimKampi301.BusinessLayer.Abstact;
+using CSharpEgitimKampi301.DataAccessLayer.Abstract;
+using CSharpEgitimKampi301.DataAccessLayer.EntityFramework;
 using CSharpEgitimKampi301.EntityLayer.Concrete;
 
 namespace CSharpEgitimKampi301.BusinessLayer.Concrete
 {
     public class ProductManager : IProductService
     {
+        private readonly IProductDal _productDal;
+
+        public ProductManager(IProductDal productDal)
+        {
+            _productDal = productDal;
+        }
+
         public void TDelete(Product entity)
         {
-            throw new NotImplementedException();
+            _productDal.Delete(entity);
         }
 
         public List<Product> TGetAll()
         {
-            throw new NotImplementedException();
+            return _productDal.GetAll();
         }
 
         public Product TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _productDal.GetById(id);
+        }
+
+        public List<object> TGetProductWithCategory()
+        {
+            return _productDal.GetProductWithCategory();
         }
 
         public void TInsert(Product entity)
         {
-            throw new NotImplementedException();
+            _productDal.Insert(entity);
         }
 
         public void TUpdate(Product entity)
+        {
+            _productDal.Update(entity);
+        }
+
+        public static implicit operator ProductManager(EfProductDal v)
         {
             throw new NotImplementedException();
         }
